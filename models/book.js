@@ -12,4 +12,4 @@ const bookSchema = new Schema({
 
 const GoogleBooks = mongoose.model("GoogleBooks", bookSchema);
 
-module.exports = GooglBooks;
+module.exports = GoogleBooks;
