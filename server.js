@@ -5,14 +5,15 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 
-
+// Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-//heroku build instructions
+// Serve up static assets 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
-// define imported routes
+
+// Define API routes here
 app.use(routes);
 
 // Connect to the Mongo DB
@@ -24,6 +25,6 @@ mongoose.connect(MONGODB_URI, {
 });
 
 app.listen(PORT, () => {
-  console.log(`API server on port ${PORT}!`);
+  console.log(`🌎 ==> API server now on port ${PORT}!`);
 });
   
