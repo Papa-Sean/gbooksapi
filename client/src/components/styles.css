@@ -1,0 +1,19 @@
+.jumbotron {
+    height: 400px;
+    background-color: lightgray;
+    background-position: center;
+}
+
+.myText {
+    color: white;
+    font-weight: bold;
+    position: relative;
+    transform: translateY(100px)
+}
+.navbar {
+    background-color: gray;
+    margin-bottom: 15px;
+}
+.form-control {
+    margin: 15px 0 15px 0;
+}
